@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "initial-scale=1.0">
+    <title>X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="Jogo">
+        <div id="PlacarJogo">
+            <h1 id="Tempo">⏱️Tempo Restante⏱️:</h1>
+            <h2 id = "Tesouros">💎Tesouros encontrados💎: 0</h2>
+            <h2 id="mensagem">...</h2>
+            <img id="Bau" src="Bau.png" >
+        </div> 
+        <div id="PlacarFinal" style="display: none;">
+            <h1 id="PontosFinais">Pontos Finais: </h1>
+            <h2 id="mensagemFinal"></h2>
+            <input id="Nome" type="text" placeholder="Nome do jogador"><br>
+            <button id="restart" onclick="iniciarJogo()">Jogar Novamente!</button>
+            <button id="PlacarRank" onclick="AddPlacar()">Placar</button>
+        </div>
+        <div id="Top10" style = "display: none">
+            <h1>Top 10!</h1>
+            <h2>Ranking</h2>
+            <p id="Ranking"></p>
+            <br>
+            <button id="restart" onclick="iniciarJogo()">Jogar Novamente!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
